@@ -3,8 +3,12 @@ import numpy as np
 import math 
 import matplotlib.pyplot as plt
 
+
+from google.colab import files
+uploaded_file = files.upload()
+
 # 入力画像を読み込み
-img = cv2.imread("catb3.jpg")
+img = cv2.imread("読み込んだ画像の名前")
 
 # カスケード型識別器の読み込み
 cat_cascade = cv2.CascadeClassifier("haarcascade_frontalcatface_extended.xml")
